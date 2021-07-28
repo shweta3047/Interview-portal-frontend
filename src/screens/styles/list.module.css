@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  align-items: center;
+  height: 75%;
+}
+
+.container .heading {
+  color: White;
+  font-weight: 600;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
+.container .card .dateTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .card .participants .listParticipants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .card .participants .listParticipants h3 {
+  width: 30%;
+  font-weight: 500;
+}
+
+.formatDate {
+  padding: 5px;
+}
+
+.edit {
+  background-image: linear-gradient(
+    to right,
+    #1fa2ff 0%,
+    #12d8fa 51%,
+    #1fa2ff 100%
+  );
+}
+.edit {
+  margin: 10px;
+  width: 80%;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+}
+.buttons a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.edit:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.delete {
+  background-image: linear-gradient(
+    to right,
+    #d31027 0%,
+    #ea384d 51%,
+    #d31027 100%
+  );
+}
+.delete {
+  margin: 10px;
+  width: 80%;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.delete:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

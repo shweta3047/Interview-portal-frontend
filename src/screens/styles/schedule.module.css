@@ -1,0 +1,79 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  align-items: center;
+  height: 75%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container {
+  width: 70%;
+  /* max-width: 700px; */
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  justify-content: flex-start;
+  padding-top: 5%;
+}
+
+.container .heading {
+  color: rgb(20, 20, 66);
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.container .dropdown .list {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.scheduleCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.schedule {
+  width: 60%;
+  padding: 15px 45px;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    #4b6cb7 0%,
+    #182848 51%,
+    #4b6cb7 100%
+  );
+}
+
+.schedule:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
